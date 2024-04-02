@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="portfolio icon.jpeg">
+    <style>
+        .l{
+            cursor: pointer;
+            color: white;
+        }
+        .l:hover{
+            color: gray;
+        }
+        .card-header{
+            background:linear-gradient(to bottom,rgb(106, 127, 230),rgb(95, 232, 218),rgb(168, 241, 73));
+
+        }
+        .navbar {
+            background:linear-gradient(to left,rgb(231, 24, 141),rgb(60, 32, 242),rgb(204, 233, 42));
+
+        }
+        #cd{
+            
+            border: 1px solid rgb(12, 12, 12);
+            box-shadow: 2px 2px 20px rgb(0, 0, 0);
+            border-radius: 50px;
+        }
+        .partho{
+            display: block;
+            margin: 0 auto;
+            border-radius: 60%;
+            box-shadow:  0px 0px 30px fuchsia;
+            border: 15px inset rgb(4, 188, 205);
+            
+        }
+
+        .distance{
+            
+            margin-left: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius: 50%;
+            border: 1px solid;
+            
+        }
+        .card-div{
+            width: 100%; 
+        }
+        .cards{
+            
+            
+            display: flex; 
+            justify-content: space-around;
+            
+        }
+        .card-body{
+            background:linear-gradient(to left,rgb(215, 217, 227),rgb(232, 223, 121),rgb(215, 217, 227));
+
+        }
+        
+        .c{
+            border: 2px solid;
+            box-shadow: 2px 2px 20px rgb(0, 0, 0);
+            border-radius: 30px;
+            width: 300px;
+            height: 300px;
+            
+            
+        }
+        .Armin{
+            color: #de4e06;
+            font-style:italic ;
+            text-shadow: 1px 3px 5px rgb(21, 37, 214), 0 0 25px rgb(240, 9, 175), 0 0 5px rgb(10, 222, 10);
+        }
+        
+        button{
+           padding: 15px;
+           font-size: 15px;
+           border: none;
+           box-shadow: 0 0 5px cyan;
+           gap:25px;
+          
+        }
+         button:hover{
+         box-shadow: 0 0 5px cyan,
+         0 0 25px cyan, 0 0 50px cyan,
+         0 0 100px cyan,0 0 200px cyan;
+         }
+        .animationabotme{
+            
+            position: relative;
+            animation-name: bottom-top-abotme;
+            animation-duration: 4s;
+            animation-delay: 0.5s;
+        }
+        .animationwe{
+            position: relative;
+            animation-name: bottom-top-we;
+            animation-duration: 4s;
+            animation-delay: 0.5s;
+        }
+        .icon-bar {
+           display: flex;
+           text-align: center;
+           justify-content: center;
+           justify-content:center ;
+      
+        }
+        .icon-bar a {
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            transition: all 0.3s ;
+            padding: 5px;
+            font-size: 15px;
+            color: white;
+            border-radius: 50%;
+            transition: 0.9s;
+        }
+        .icon-bar a:hover {
+            background-color: #000;
+            transform: scale(1.2);
+        }
+        .facebook {
+            background: #3B5998;
+            color: white;
+        }
+    
+        .twitter {
+             background: #55ACEE;
+             color: white;
+        }
+    
+        .google {
+           background: #dd4b39;
+           color: white;
+        }
+        .linkedin {
+           background: #007bb5;
+           color: white;
+        }
+    
+        .youtube {
+            background: #bb0000;
+            color: white;
+         }
+
+        @keyframes bottom-top-abotme{
+            from {
+                top: -500px;
+            }
+            to{
+                
+                top: 0px;
+            }
+        }
+        @keyframes bottom-top-we{
+            from {
+                
+                top: -1200px;
+            }
+            to{
+                top: 0px;
+            }
+        }
+        .hidden{
+            display: none;
+        }
+        
+
+        .card,.card-header,.card-body,.card-footer{
+            border: 0px;
+        }
+       
+    
+        
+        
+
+
+        @media only screen and (max-width: 767px){
+            .l{
+            font-size: 10pt;
+        }
+        #cd{
+            margin-top: 50%;
+        }
+            .partho{
+                width: 150px;
+                height: 150px;
+                
+                
+            }
+            
+            #specialize-div{
+                height: 250px;
+                overflow: auto;
+            }
+            
+            .cards{
+                flex-wrap: wrap;
+                
+            }
+            .c{
+                margin-top: 5px;
+            }
+        
+      
+    }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+
+            <nav class="navbar navbar-expand  ">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a  class=" l nav-link "  href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <p class="l nav-link  "  onclick="toggleAboutMe()">About</p>
+                    </li>
+                    <li class="nav-menu ">
+                        <p  class="l nav-link "  onclick="toggleWorkExperience()">Work Experience</p>
+                    </li>
+                    <li class="nav-menu ">
+                        <a class="l nav-link  " href="https://drive.google.com/file/d/1Ghx-jKgCq8DaL_XaQ7RFuB2Mmwj9xWd1/view?usp=sharing">Resume</a>
+                    </li>
+                </ul>
+                
+            </nav>
+
+        </div>
+
+        <div class="card-body ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 col-sm-5">
+                        
+                        <div style="display: flex; justify-content: center; align-items: center;height: 300px;">
+                            <div>
+                                <h1 style="display: block;">Hello</h1>
+                                <h1 style="display: block;">I'm <span class="Armin">ARMIN AKTER</span></h1>
+                                <h5 style="display: block;">Web Design & web Developer</h5>
+                                <button type="button" class="btn mt-3 bg-warning">Let's talk</button>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-7 col-sm-7">
+                        <div id="cd" class="card ">
+                            <img class="partho" class="justify-content-center m-auto" src="mypic.png" width="300px" height="300px">
+                        </div>
+                    </div>
+
+                    <div id="aboutme" class="animationabotme hidden">
+                        <div style="margin-top: 50px; display: flex; justify-content: center;">
+                            <div class="card" style="width: 70%;">
+                                <h1 style="display: block; margin: 0 auto;">About me</h1>
+                                <img style="border-radius: 50%; display: block; margin: 0 auto;" src="mypic.png" width="120px" height="120px">
+                                <p>Hello, I'm a web design & web developer from Saidpur, Nilphamari, Bangladesh. I create efficient & innovative experiences that meet user needs and business goals.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+
+                    <div style="width: 100%;margin-top: 30px; display: flex; justify-content: center;">
+                        <h1 class="d-block">Specializing in</h1>
+                    </div>
+                    
+                    <div class="card">
+                        I specialize in developing mobile applications and websites, encompassing information systems, responsive web design, meticulous diagram creation for better understanding, integrated coding, and thorough testing in conjunction with the Software Development Life Cycle (SDLC).
+                    </div>
+
+                    <div class="container" id="specialize-div" 
+                    style="flex-wrap: wrap; margin-top: 20px; display: flex; justify-content: center;
+                    border: 1px solid;  box-shadow: 2px 2px 20px rgb(0, 0, 0);">
+                        
+                        <img style=" margin-top: 5px; border-radius: 50%; border: 1px solid;"  src="code.jpg" width="80px" height="80px">
+                        <img class="distance" src="coding.jpg" width="80px" height="80px">
+                        <img class="distance" src="html.png" width="80px" height="80px">
+                        <img class="distance" src="css.jpg" width="80px" height="80px">
+                        <img class="distance" src="js.jpg" width="80px" height="80px">
+                        <img class="distance" src="php.png" width="80px" height="80px">
+                        <img class="distance" src="apache.png" width="80px" height="80px">
+                        <img class="distance" src="web d.jpg" width="80px" height="80px">
+                        <img class="distance" src="sql.png" width="80px" height="80px">
+                        <img class="distance" src="se.jpg" width="80px" height="80px">
+                        <img class="distance" src="converter.jpg" width="80px" height="80px">
+                        <img class="distance" src="visial code.jpg" width="80px" height="80px">
+                        <img class="distance" src="web coding.jpg" width="80px" height="80px">
+                        <img class="distance" src="firebase.jpg" width="80px" height="80px">
+                        <img class="distance" src="netbeans.jpg" width="80px" height="80px">
+                        <img class="distance" src="web design.png" width="80px" height="80px">
+                        <img class="distance" src="web.jpg" width="80px" height="80px">
+                        <img class="distance" src="webflow.jpg" width="80px" height="80px">
+                        <img class="distance" src="java.png" width="80px" height="80px">
+                        
+                    </div>
+
+                    <div id="we" class="animationwe hidden card-div">
+                        <h1 style="display: block; text-align: center; margin-top: 20px;">Work Experience</h1>
+                        <div class="cards">
+
+                            <div class="c" class="card " style="background-image: url('work1.jpg'); background-repeat: no-repeat;background-size: cover;">
+                                    
+                            </div>
+    
+                            <div class="c" class="card " style="background-image: url('work2.jpg') ;background-repeat: no-repeat;background-size: cover;">
+                               
+                            </div>
+    
+                            <div class="c" class="card " style="background-image: url('work3.png');background-repeat: no-repeat;background-size: cover;">
+                                
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="#" class="google"><i class="fa fa-google"></i></a> 
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+          </div>
+
+        <div class="card-footer text-center">
+            <span style="font-size: 8pt;">Created by_Armin</span> <br>
+            <span style="font-size: 8pt;">arminakrte@gmail.com</span>
+        </div>
+
+    </div>
+
+
+    <script>
+        /* for solve dclick
+        function aboutmehideopen(){
+            let x = document.getElementById('aboutme').style.display;
+
+            if(x=== 'none')
+            {
+                document.getElementById('aboutme').style.display = 'block';
+            }
+            else{
+                document.getElementById('aboutme').style.display = 'none';
+            }
+            
+        }
+
+        function wehideopen(){
+            let x = document.getElementById('we').style.display;
+
+            if(x==='none'){
+                document.getElementById('we').style.display = 'block';
+            }else{
+                document.getElementById('we').style.display = 'none';
+            }
+        }*/
+
+       
+    function toggleAboutMe() {
+        var x = document.getElementById('aboutme');
+        x.classList.toggle('hidden');
+    }
+
+    function toggleWorkExperience() {
+        var x = document.getElementById('we');
+        x.classList.toggle('hidden');
+    }
+
+
+
+    </script>
+    
+</body>
+</html>
